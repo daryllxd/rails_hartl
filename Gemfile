@@ -13,15 +13,20 @@ gem 'sass-rails', '~> 4.0.0' # for stylesheets
 gem 'uglifier', '2.1.1' # compressor for JavaScript assets
 gem 'coffee-rails', '4.0.0' # .js.coffee assets and views
 gem 'jquery-rails', '3.0.4' # Use jquery as the JavaScript library
-gem 'jbuilder', '~> 1.2' # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
+gem 'turbolinks', '1.1.1' # Turbolinks makes following links in your web application faster. Read more: https://github.com/rails/turbolinks
+gem 'jbuilder', '1.0.2' # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
+
+group :production do
+  gem 'pg', '0.15.1'
+  gem 'rails_12factor', '0.0.2'
+end
 
 # See https://github.com/sstephenson/execjs#readme for more supported runtimes
 # gem 'therubyracer', platforms: :ruby
 
 
 
-# Turbolinks makes following links in your web application faster. Read more: https://github.com/rails/turbolinks
-gem 'turbolinks'
+
 
 
 
